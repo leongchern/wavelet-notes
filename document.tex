@@ -1,0 +1,33 @@
+\documentclass{article}
+\begin{document}
+	\section{Wavelets}
+	13th July
+	Collection and summary of various notes.
+	\subsection{Introduction}
+		
+		\textbf{Transforms} - these are applied to singals to obtain further insights about the signals not available from the raw signal itself. A \textbf{time-domain} signal is basically a signal that can be plotted on an xy chart such that time is on the x-axis and amplitude is on the y-axis.
+		
+		\textbf{Time-amplitude} representation is not the best.
+		The \textbf{frequency spectrum} of a signal refers to the frequency components (or \textbf{spectral} components) of a signal. It shows what frequencies exist in the signal. Frequencies can be high or low, and are measured in hertz (Hz).
+		
+		\textbf{Fourier transforms} (FT) lets us find the frequency content/spectrum of signal. FT gives the \textbf{frequency-amplitude} representation of a signal. 
+		It should be noted that both FT and wavelet transforms (WT) are reversible transforms. In other words, we can go back and forth from the raw and transformed output. So, FT gives frequency information existing in a signal, but it does not tell us when in time do these signals exist. 
+		
+		\textbf{Stationary signals} are signals whose frequency content do not change in time. There is therefore no need to know at what point in time do which frequencies exists, because these frequencies exist at \textit{all} times.
+		
+		FT can be used in non-stationary singals only if we care about what spectral components exist and \textit{not} when in time do they occur. Therefore, when time localization is required, a different transform giving the time-frequency representation is needed.
+		\subsubsection{Wavelets}
+		Wavelet transforms provides a \textbf{time-frequency} representation. The idea of \textbf{decomposition} is as follows: Suppose we have a signal with has frequencies up to 1000 Hz. We split this signal into 2 parts by passing the signal into a \textbf{highpass} and \textbf{lowpass filter} which then results in 2 different versions of the same signal: A signal in the 0-500 Hz (lowpass portion) and another in the 500-1000 Hz (highpass portion). We take the lowpass portion and put it into the high- and lowpass filters again, this time obtaining 2 parts 0-250 Hz in the lowpass portion and 250-500 in the highpass portion. The process of repeatedly passing the signal into the filters which \textit{splits} the signal into smaller parts is called decomposition. So therefore by decomposition, we can take a signal and split it up into different \textbf{frequency bands}.
+		
+		\textbf{Decomposition can be thought roughly as 'splitting into a 3-D space.' While we can't say exactly which frequencies exist at which exact time instance, we can however say which frequency bands exist at which time intervals.}
+		
+		The \textbf{uncertainty principle} by Heisenberg states that the momentum and position of a moving particle cannot be known simultaneously. 
+		
+		So looking at the limitations \textbf{Short Time Fourier Transform} (STFT), we switch to using WT due to resolution issues. STFT has a fixed resolution, while WT is variable. 
+		
+		High frequencies are better resolved (detected) in time than low frequencies. Conversely, low frequencies are better resolved in frequency than high frequencies.
+		
+	
+	
+	
+\end{document}
