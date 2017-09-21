@@ -54,22 +54,24 @@
 		
 		\begin{figure}[t!]
 			\centering
-			\subfloat[XXX]{
+			\subfloat[Sinusoidal example with 2 frequencies]{
 				\includegraphics[width=0.4\textwidth] {img/lo_freq_resol_1}
 				\label{fig:lo_freq_resol_1} } 
 			\hspace*{2.0em}
-			\subfloat[XXX]{
+			\subfloat[3-D representation in terms of scale, amplitude and translation]{
 				\includegraphics[width=0.4\textwidth] {img/lo_freq_resol_2}
 				\label{fig:lo_freq_resol_2} } \\
-			\caption{XXX}
+			\caption{Resolution of Low Frequencies}
 			\label{fig:lo_freq_resol}
 		\end{figure}
 	
-		For the second point, first note that XXX
+		For the second point, we make use of a sinosoidal signal with 2 frequencies (See how the waves are more compressed on the right half) as shown in Fig.  \ref{fig:lo_freq_resol_1}. One key thing to note in Fig. \ref{fig:lo_freq_resol_2} is that \textbf{scale} is the \textit{inverse} of frequency. The small bumps may lead us to think that high frequency (small scales) are easy to pick out. However this brings us to  a very important point: Good scale resolution means poor frequency resolution and vice versa. 
 		
 	\subsection{Fourier Transform}
 	
 	This section touches on the FT briefly. 
+	
+	Recall that FT is not suitable for non-stationary signals. Since the FT gives only a amplitude- frequency, it does not capture the fact that the properties of the signal may be changing in time.
 
 		
 		
